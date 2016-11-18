@@ -1,10 +1,13 @@
 #BlueJ class context
 comment0.params=
 comment0.target=java.lang.String\ getGreeting()
+comment0.text=pulled\ at\ start\ to\ greet\ user
 comment1.params=
 comment1.target=java.lang.String\ hello()
+comment1.text=welcomes\ user\ to\ general\ department\ of\ chatbot
 comment2.params=statement
 comment2.target=java.lang.String\ getResponse(java.lang.String)
+comment2.text=getresponse\ method\ -\ same\ method\ used\ in\ magpie
 comment3.params=statement
 comment3.target=java.lang.String\ transformIWantToStatement(java.lang.String)
 comment3.text=\n\ Take\ a\ statement\ with\ "I\ want\ to\ <something>."\ and\ transform\ it\ into\ \n\ "What\ would\ it\ mean\ to\ <something>?"\n\ @param\ statement\ the\ user\ statement,\ assumed\ to\ contain\ "I\ want\ to"\n\ @return\ the\ transformed\ statement\n

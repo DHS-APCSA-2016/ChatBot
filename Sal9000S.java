@@ -25,10 +25,25 @@ public class Sal9000S
         {
             response = "Alrighty";
         }
+        //////////////////////////////////////////////////////////////////////
+        // Planning to input Markov chain to create easier parsing of text. //
+        // Markov chain would also improve chatbot vocabulary to create its //
+        // own responses in the future...                                   //
+        //////////////////////////////////////////////////////////////////////
+        else if (findKeyword(statement, "link") >= 0)
+        {
+            response = "www.dublinhighschoolmenssoccer.shutterfly.com";
+        }
         else if (findKeyword(statement, "father") >= 0
                 || findKeyword(statement, "dad") >= 0
                 || findKeyword(statement, "papa") >= 0
                 || findKeyword(statement, "jerk") >= 0)
+        ////////////////////////////////////////////////////////////////////////
+        // Would also like to implement a Levenshtein distance algorithim as  //
+        // a form of "autocorrect" for my chatbot. I would set a threshold so //
+        // if the distance was lower than the threshold, the chatbot would    //
+        // correct the users input. A dictionary .txt file would be used too  //
+        ////////////////////////////////////////////////////////////////////////
         {
             response = "Tell me more about your father";
         }
@@ -62,6 +77,10 @@ public class Sal9000S
                 response = transformYouMeStatement(statement);
             }
         }
+        /** parses through the sentence to find anything dhs soccer related, will add
+         * more in future versions so that more iterations be parsed. Planning to repeat
+         * this for other aspects to create a more diverse response vocabulary.
+         */
         else if (findKeyword(statement, "dublin high soccer", 0) >= 0)
         {
             // Look for a two word (you <something> me)

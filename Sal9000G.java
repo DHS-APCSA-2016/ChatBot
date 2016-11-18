@@ -12,21 +12,21 @@ import java.util.*;
 
 public class Sal9000G
 {
-    
-    
+    /** pulled at start to greet user */
 	public String getGreeting()
 	{
 		return "Hello, my name is SAL9000!\nYour personal advisor for all things Dublin High Soccer related!";
 	}
-	
+	/** welcomes user to general department of chatbot */
 	public String hello()
 	{
 	    return "Welcome to the General Department of SAL9000!\nWhat can I do for you?";
 	}
+	/** getresponse method - same method used in magpie */
 	public String getResponse(String statement)
 	{
 		String response = "";
-		
+		/** currently there are only generic responses, more are to come in future versions */
 		if (statement.length() == 0)
 		{
 			response = "Didn't quite catch what you said...";
@@ -36,7 +36,7 @@ public class Sal9000G
 		{
 			response = "Why so negative?";
 		}
-		else if (findKeyword(statement, "father") >= 0
+		else if (findKeyword(statement, "father") >= 0 //checks for different iterations of the same word
                 || findKeyword(statement, "dad") >= 0
                 || findKeyword(statement, "papa") >= 0
                 || findKeyword(statement, "jerk") >= 0)
@@ -199,31 +199,54 @@ public class Sal9000G
 	 * Pick a default response to use if nothing else fits.
 	 * @return a non-committal string
 	 */
-	private String getRandomResponse()
-	{
-		final int NUMBER_OF_RESPONSES = 4;
-		double r = Math.random();
-		int whichResponse = (int)(r * NUMBER_OF_RESPONSES);
-		String response = "";
-		
-		if (whichResponse == 0)
-		{
-			response = "Interesting, tell me more.";
-		}
-		else if (whichResponse == 1)
-		{
-			response = "Hmmm.";
-		}
-		else if (whichResponse == 2)
-		{
-			response = "Do you really think so?";
-		}
-		else if (whichResponse == 3)
-		{
-			response = "You don't say.";
-		}
-
-		return response;
-	}
+    private String getRandomResponse()
+    {
+        final int NUMBER_OF_RESPONSES = 10;
+        double r = Math.random();
+        int whichResponse = (int)(r * NUMBER_OF_RESPONSES);
+        String response = "";
+        
+        if (whichResponse == 0)
+        {
+            response = "Very cool! Wish to share more?";
+        }
+        else if (whichResponse == 1)
+        {
+            response = "Okay Okay....";
+        }
+        else if (whichResponse == 2)
+        {
+            response = "Is that so?";
+        }
+        else if (whichResponse == 3)
+        {
+            response = "Fascinating";
+        }
+        else if (whichResponse == 4)
+        {
+            response = "Cool beans my dude.";
+        }
+        else if (whichResponse == 5)
+        {
+            response = "No way...";
+        }
+        else if (whichResponse == 6)
+        {
+            response = "I would check google maybe?";
+        }
+        else if (whichResponse == 7)
+        {
+            response = "Huh... Never though of that...";
+        }
+        else if (whichResponse == 8)
+        {
+            response = "Thanks for sharing";
+        }
+        else if (whichResponse == 9)
+        {
+            response = "Seems pretty cool";
+        }
+        return response;
+    }
 
 }

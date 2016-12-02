@@ -1,0 +1,73 @@
+Conner LeValley
+Eric Tang
+
+
+
+
+                                          Chatbot Final Submission                               
+                                          Team Members: Conner and Eric
+                                          Title of Chatbot: SAL9000 (spinoff of HAL9000)
+                                          GitHub Link: https://github.com/DHS-APCSA-2016/ChatBot 
+                
+
+
+
+
+1) Must identify a domain of expertise/focus: 
+Our chatbots area of expertise is centered around the DHS Men’s Soccer Program but can also function as a general chatbot.  
+
+
+2) Must implement a database of at least 35 response phrases (use Arrays or Arraylists. You can also 
+use flat files (csv)):
+
+
+     a) at least 25 context based response phrases 
+
+
+     b) at least 10 random responses
+
+
+3) Must implement the word boundary algorithm from the Magpie project
+
+
+4) Must define your algorithm, classes, and main methods used.
+
+
+   a) Algorithm must have logic for at least:
+               i) Responses for null input or input that would require a random or probing response.  
+
+
+                   Required to have both random and probing responses 
+
+
+  ii) Context setting responses (something your bot easily understands) 
+
+
+ iii) Transposition responses that turn input into questions 
+
+
+  iv) At least one unique response branch that you define and develop.
+
+
+5) Must use good (Javadoc) format for comments [ make sure that each method is commented]
+
+
+Extra Credit:
+
+
+1) Use of Android Studio Speach to text  (you will be required to give a short talk on implementation)   
+
+
+5% of assigned points  [ Note here that you have included this here, and see me if you have implemented this task]
+
+
+2) Use of Neural Network or other Open Source AI libraries or interfaces (you will be required to give 
+
+
+a short talk on implementation)  5% of assigned points.  [ Note here that you have included this here, and see me if you have implemented this task]
+
+
+3) Log of all input/response and a plan  for using that log to  extend or refine the domain of knowledge for your chatbot. (you will be required to give a short talk on implementation) 5%   of assigned points. 
+I have included this in my chatbot // more information can be found in the ReadMe.txt file
+
+
